@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css'
+import Score from './Score/Score';
+import GameStart from './GameStart/GameStart';
 
 
 function App() {
 
   return (
     <div className='background'>
-     <h1>ttt</h1>
+     <Score/>
+     <GameStart />
     </div>
   )
 }

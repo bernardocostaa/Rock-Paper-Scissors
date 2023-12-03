@@ -1,0 +1,38 @@
+.scoreCont{
+    max-width: 700px;
+    border-radius: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.29);
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 24px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.title{
+    color: white;
+}
+
+.scorePlacar{
+    border-radius: 8px;
+    background: linear-gradient(0deg, #F3F3F3 0%, #FFF 100%);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.20);
+    padding: 16px 45px;
+    width: 150px;
+    height: 115px;
+    text-align: center;
+}
+
+.scorePlacar p{
+    font-size: 1rem;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    color: var(--ScoreText);
+    text-transform: uppercase;
+}
+
+.scorePlacar span{
+    font-size: 4rem;
+    color: #565468;
+    font-weight: 700;
+}
