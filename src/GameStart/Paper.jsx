@@ -4,8 +4,6 @@ import PaperSvg from '../Assets/icon-paper.svg'
 
 const Paper = ({newClass}) => {
 
-  console.log(newClass);
-
   return (
       <div className={newClass ? `${style.lastOvalPaper} ${style.newWidthheightLast}` : style.lastOvalPaper}>
         <div className={newClass ? `${style.secondOvalPaper} ${style.newWidthheightSecond}` : style.secondOvalPaper}>

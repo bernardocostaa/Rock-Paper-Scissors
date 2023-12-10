@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Score.module.css";
 
-const Score = () => {
+const Score = ({ score }) => {
   return (
     <div className={style.scoreCont}>
       <div className={style.title}>
@@ -12,7 +12,7 @@ const Score = () => {
       <div>
         <div className={style.scorePlacar}>
           <p>Score</p>
-          <span>12</span>
+          <span>{score}</span>
         </div>
       </div>
     </div>

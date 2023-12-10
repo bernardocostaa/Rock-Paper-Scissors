@@ -1,10 +1,11 @@
 .areaGame{
     margin: 60px auto 0 auto;
     max-width: 630px;
+    height: 400px;
     display: flex;
     text-align: center;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: center;
+    gap: 100px;
 }
 
 .textChoice{
@@ -17,3 +18,52 @@
     margin-bottom: 50px;
 }
 
+.choiceComputer{
+    width: 225px;
+    display: block;
+    margin-top: 80px;
+    height: 225px;
+    background: rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    animation: boxPlayer 2s infinite;
+}
+
+.areaWin{
+    min-width: 225px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.areaWin h1{
+    font-size: 3.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.areaWin a{
+    border-radius: 8px;
+    background: linear-gradient(0deg, #F3F3F3 0%, #FFF 100%);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.20);
+    text-decoration: none;
+    color: #3B4262;
+    text-transform: uppercase;
+    padding: 16px 60px;
+    transition: 0.3s all;
+}
+
+.areaWin a:hover{
+    color: #DB2E4D;
+}
+
+@keyframes boxPlayer{
+   from{
+    transform: scale(0);
+   }
+
+   to{
+    transform: scale(1.5);
+   }
+}

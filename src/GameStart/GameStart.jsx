@@ -5,13 +5,13 @@ import Scissor from "./Scissor.jsx";
 import style from "./GameStart.module.css";
 import GameShow from "../GameShow/GameShow.jsx";
 
-const GameStart = () => {
+const GameStart = ({updateScore}) => {
   const [optPlayer, setOptPlayer] = React.useState(null);
 
   function handleClick(nameOpt) {
-    console.log(nameOpt);
-    setOptPlayer(nameOpt); // Se desejar armazenar o nameOpt no estado
+    setOptPlayer(nameOpt);
   }
+  
   if(optPlayer === null){
     return (
       <div className={style.areaGame}>
@@ -28,7 +28,7 @@ const GameStart = () => {
     );
   }else{
     return(
-      <GameShow playerChoice={optPlayer} />
+      <GameShow playerChoice={optPlayer} updateScore={updateScore} />
     )
   }
 };
