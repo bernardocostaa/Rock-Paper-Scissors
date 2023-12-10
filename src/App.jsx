@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css'
 import Score from './Score/Score';
 import GameStart from './GameStart/GameStart';
+import Rules from './RulesBtn/Rules';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className='background'>
      <Score/>
      <GameStart />
+     <Rules />
     </div>
   )
 }

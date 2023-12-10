@@ -1,0 +1,19 @@
+.areaGame{
+    height: 430px;
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 56px auto 0 auto;
+    gap: 24px 80px;
+    position: relative;
+}
+
+.areaGame::after{
+    content: '';
+    position: absolute;
+    background: url('../Assets/bg-triangle.svg') no-repeat center;
+    top: 80px;
+    width: 100%;
+    height: 290px;
+}

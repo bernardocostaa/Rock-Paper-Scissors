@@ -1,0 +1,19 @@
+.areaGame{
+    margin: 60px auto 0 auto;
+    max-width: 630px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.textChoice{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+

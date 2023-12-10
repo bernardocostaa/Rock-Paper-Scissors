@@ -1,0 +1,13 @@
+.btnRules{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: white;
+    justify-content: flex-end;
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    padding: 11px 35px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}

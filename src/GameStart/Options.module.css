@@ -5,6 +5,8 @@ button{
     border: none;
     outline: none;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 
 /* Paper */
@@ -182,4 +184,37 @@ button{
 
 .thirdOvalScissor:hover{
     transform: rotate(30deg);
+}
+
+.newWidthheightLast{
+    width: 292px;
+    height: 300px;
+}
+.newWidthheightSecond{
+    width: 292px;
+    height: 286px;
+}
+
+.newWidthheightThird{
+    width: 292px;
+    height: 286px;
+
+}
+
+.newWidthheightLast:hover, .newWidthheightThird:hover{
+    transform: none;
+    box-shadow: none;
+}
+.newWidthheightWhiteOne{
+    width: 225px;
+    height: 225px;
+}
+
+.newWidthheightWhiteSecond{
+    width: 225px;
+    height: 212px;
+}
+
+.newWidthheightImg{
+    width: 120px;
 }
