@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import style from "./GameShow.module.css";
 import Paper from "../GameStart/Paper";
 import Rock from "../GameStart/Rock";
@@ -6,9 +6,10 @@ import Scissor from "../GameStart/Scissor";
 import OptionComputer from "./OptionComputer";
 
 const GameShow = ({ playerChoice, setScore, onPlayAgain }) => {
-  const [randomChoice, setRandomChoice] = useState(["Paper", "Rock", "Scissor"]);
-  const [choicePlay, setChoicePlay] = useState(null);
-  const [status, setStatus] = useState("");
+  const [randomChoice, setRandomChoice] = React.useState(["Paper", "Rock", "Scissor"]);
+  const [choicePlay, setChoicePlay] = React.useState(null);
+  const [status, setStatus] = React.useState("");
+  const [win, setWin] = React.useState(null)
 
   let PlayerNow;
 
@@ -20,11 +21,11 @@ const GameShow = ({ playerChoice, setScore, onPlayAgain }) => {
     PlayerNow = Scissor;
   }
 
-  useEffect(() => {
+  React.useEffect(() => {
     setRandomChoice((randomChoice) => randomChoice.filter((player) => player !== playerChoice));
   }, [playerChoice]);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const playerComputer = Math.floor(Math.random() * 2);
     const computerChoice = randomChoice[playerComputer];
 
@@ -34,14 +35,17 @@ const GameShow = ({ playerChoice, setScore, onPlayAgain }) => {
       switch (playerChoice) {
         case "Paper":
           setStatus(computerChoice === "Rock" ? "You Win" : "You Lose");
+          setWin(computerChoice === "Rock" ? true : false)
           setScore((prevScore) => (computerChoice === "Rock" ? prevScore + 1 : prevScore));
           break;
         case "Rock":
           setStatus(computerChoice === "Scissor" ? "You Win" : "You Lose");
+          setWin(computerChoice === "Scissor" ? true : false)
           setScore((prevScore) => (computerChoice === "Scissor" ? prevScore + 1 : prevScore));
           break;
         case "Scissor":
           setStatus(computerChoice === "Paper" ? "You Win" : "You Lose");
+          setWin(computerChoice === "Paper" ? true : false)
           setScore((prevScore) => (computerChoice === "Paper" ? prevScore + 1 : prevScore));
           break;
         default:
@@ -55,11 +59,14 @@ const GameShow = ({ playerChoice, setScore, onPlayAgain }) => {
     };
   }, [randomChoice, playerChoice, setScore]);
 
+  console.log(win);
   return (
     <div className={style.areaGame}>
       <div>
         <p className={style.textChoice}>You Picked</p>
-        <PlayerNow newClass={true} />
+        <div className={win ? style.win : ''}>
+          <PlayerNow newClass={true} />
+        </div>
       </div>
       {status && (
         <div className={style.areaWin}>
@@ -72,7 +79,9 @@ const GameShow = ({ playerChoice, setScore, onPlayAgain }) => {
         {choicePlay === null ? (
           <div className={style.choiceComputer}></div>
         ) : (
-          <OptionComputer choicePlay={choicePlay} />
+          <div className={win ? '' : style.win}>
+            <OptionComputer choicePlay={choicePlay} />
+          </div>
         )}
       </div>
     </div>

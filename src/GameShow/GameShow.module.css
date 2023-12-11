@@ -68,3 +68,20 @@
     transform: scale(1.5);
    }
 }
+
+.win{
+    position: relative;
+}
+
+
+.win::after{
+    content: '';
+    width: 730px;
+    position: absolute;
+    bottom: -205px;
+    left: -220px;
+    height: 718px;
+    background: url(/src/Assets/win.svg) no-repeat;
+    background-size: contain;
+
+}

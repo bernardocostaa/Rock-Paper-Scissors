@@ -1,9 +1,12 @@
 import React from 'react'
 import style from './Rules.module.css'
 
-const Rules = () => {
+const Rules = ({ setModal }) => {
+
   return (
-    <button className={style.btnRules}>Rules</button>
+    <>
+      <button onClick={() => setModal((prevModal) => !prevModal)} className={style.btnRules}>Rules</button>
+    </>
   )
 }
 

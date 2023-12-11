@@ -14,11 +14,11 @@ const GameStart = ({ onGameStart }) => {
       <button onClick={() => handleClick("Paper")}>
         <Paper />
       </button>
-      <button onClick={() => handleClick("Rock")}>
-        <Rock />
-      </button>
       <button onClick={() => handleClick("Scissor")}>
         <Scissor />
+      </button>
+      <button onClick={() => handleClick("Rock")}>
+        <Rock />
       </button>
     </div>
   );

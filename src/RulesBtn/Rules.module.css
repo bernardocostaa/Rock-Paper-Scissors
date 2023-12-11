@@ -10,4 +10,11 @@
     position: absolute;
     right: 20px;
     bottom: 20px;
+    transition: .3s all;
 }
+
+.btnRules:hover{
+    color: #3B4262;
+    background: #fff;
+}
+
