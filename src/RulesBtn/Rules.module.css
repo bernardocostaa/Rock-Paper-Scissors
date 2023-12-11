@@ -18,3 +18,9 @@
     background: #fff;
 }
 
+@media(max-width:800px){
+    .btnRules{
+        right: 50%;
+        transform: translateX(50%);
+    }
+}

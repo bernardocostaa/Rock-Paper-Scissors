@@ -62,7 +62,7 @@ const GameShow = ({ playerChoice, setScore, onPlayAgain }) => {
   console.log(win);
   return (
     <div className={style.areaGame}>
-      <div>
+      <div className={style.mobileChoice}>
         <p className={style.textChoice}>You Picked</p>
         <div className={win ? style.win : ''}>
           <PlayerNow newClass={true} />
@@ -74,12 +74,12 @@ const GameShow = ({ playerChoice, setScore, onPlayAgain }) => {
           <button onClick={onPlayAgain}>PLAY AGAIN</button>
         </div>
       )}
-      <div>
+      <div className={style.mobileChoice}>
         <p className={style.textChoice}>The House Picked</p>
         {choicePlay === null ? (
-          <div className={style.choiceComputer}></div>
+        <div className={style.choiceComputer}></div>
         ) : (
-          <div className={win ? '' : style.win}>
+          <div className={win ? style.ajusteMobile : style.win}>
             <OptionComputer choicePlay={choicePlay} />
           </div>
         )}
