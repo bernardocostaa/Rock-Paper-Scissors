@@ -17,7 +17,7 @@ const GameStart = ({ onGameStart }) => {
       <button onClick={() => handleClick("Scissor")}>
         <Scissor />
       </button>
-      <button onClick={() => handleClick("Rock")}>
+      <button className={style.mobileRock} onClick={() => handleClick("Rock")}>
         <Rock />
       </button>
     </div>

@@ -44,7 +44,9 @@ function App() {
               <h2>Rules</h2>
               <button onClick={() => setModal(false)}>X</button>
            </div>
+           <div className="mobileModal">
            <img className="imgRules" src={imgRules} alt="" />
+           </div>
           </div>
         </div>
       )}

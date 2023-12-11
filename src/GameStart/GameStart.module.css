@@ -17,3 +17,32 @@
     width: 100%;
     height: 290px;
 }
+
+
+@media(max-width:800px){
+    .areaGame::after{
+        content: '';
+        position: absolute;
+        background: url(/src/Assets/bg-triangle.svg) no-repeat center;
+        top: 80px;
+        width: 30%;
+        height: 288px;
+    }
+
+    .areaGame{
+        gap: 0 50px;
+        height: 285px;
+        width: 100%;
+    }
+
+    .mobileRock{
+        position: absolute;
+        top: 225px;
+    }
+}
+
+@media(max-width:500px){
+    .areaGame::after{
+        width: 50%;
+    }
+}

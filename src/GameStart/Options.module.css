@@ -218,3 +218,29 @@ button{
 .newWidthheightImg{
     width: 120px;
 }
+
+@media(max-width:800px){
+    .lastOvalPaper,.lastOvalRock,.lastOvalScissor{
+        width: 130px;
+        height: 132px;
+    }
+
+    .secondOvalPaper,.thirdOvalPaper,.secondOvalRock,.thirdOvalRock,.thirdOvalScissor,.secondOvalScissor{
+        width: 130px;
+        height: 126px;
+    }
+
+    .paperWhiteOne,.scissorWhiteOne,.rockWhiteOne{
+        width: 99px;
+        height: 99px;
+    }
+
+    .paperWhiteTwo,.scissorWhiteTwo,.rockWhiteTwo{
+        width: 99px;
+        height: 92px;
+    }
+   
+    .imgPaper,.imgRock,.imgScissor{
+        width: 48px;
+    }
+}
