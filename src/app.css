@@ -89,7 +89,7 @@ body {
 
   .rules button {
     position: absolute;
-    bottom: 60px;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
@@ -102,5 +102,9 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+  }
+
+  .imgRules{
+    margin: 0 auto;
   }
 }
