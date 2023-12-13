@@ -1,5 +1,5 @@
 <h1 align="center">
-  Countries of the World
+ Rock Paper Scissors
 </h1>
 
 <p align="center">
@@ -18,7 +18,7 @@
 Executar para clonar o projeto:
 
 ```bash
-git clone https://github.com/bernardocostaa/Countries-of-the-world.git
+git clone https://github.com/bernardocostaa/Rock-Paper-Scissors.git
 ```
 
 Entrar na pasta usando cd e executar para instalar as dependências necessárias:
@@ -47,7 +47,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ## 🚧 Projeto:
 
-Link do Projeto: [Countries of the World](https://bernardocostaa-rest-countries.netlify.app/)
+Link do Projeto: [Rock Paper Scissors](https://bernardocostaa-rest-countries.netlify.app/)
 
 
 ## :memo: Licença
